@@ -1,0 +1,7 @@
+#projects-link {
+    color: var(--red);
+}
+
+#projects-link img {
+    visibility: visible;
+}

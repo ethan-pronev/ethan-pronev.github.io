@@ -1,0 +1,7 @@
+#home-link {
+    color: var(--red);
+}
+
+#home-link img {
+    visibility: visible;
+}

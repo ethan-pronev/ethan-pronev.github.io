@@ -1,0 +1,76 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --light_blue: #5BCDF5;
+    --dark_blue: #275DAD;
+    --red: #F24236;
+    --other-red: #D72638; /*dk which red to use*/
+    --grey: #5B616A;
+    --snow: #FCF7F8; /*prob don't use*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--grey);
+    background: url("../img/bg-final.png") no-repeat fixed center/cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+#menu {
+    position: fixed;
+    width: 175px;
+    height: 100%;
+    z-index: 1;
+    background: url("../img/circle-final-full.png") no-repeat fixed;
+    background-size: 50px auto;
+    background-position-x: 10px;
+}
+
+.menu-item {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var( --light_blue);
+    margin-top: 47px;
+    height: 33px;
+    line-height: 33px;
+    text-align: left;
+    position: relative; /*required so red icons are positions properly*/
+}
+
+#home-link {
+    margin-top: 23px;
+}
+
+.menu-item img {
+    height: 100%;
+    float: left;
+    margin-left: 19px;
+    margin-right: 20px;
+}
+
+.red-icons {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.menu-item:hover {
+    color: var(--red);
+}
+.menu-item:hover > .red-icons {
+    visibility: visible;
+}
+
+#content {
+    margin-left: 175px;
+}
