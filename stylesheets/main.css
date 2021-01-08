@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inconsolata', monospace;
     font-weight: 300;
     color: var(--grey);
     background: url("../img/bg-final.png") no-repeat fixed center/cover;
@@ -31,7 +31,8 @@ a {
     width: 175px;
     height: 100%;
     z-index: 1;
-    background: url("../img/circle-final-full.png") no-repeat fixed;
+    background: url("../img/final-sidebar.png") no-repeat fixed;
+    background-color: var(--dark_blue);
     background-size: 50px auto;
     background-position-x: 10px;
 }
@@ -39,12 +40,12 @@ a {
 .menu-item {
     font-size: 1.2rem;
     font-weight: 400;
-    color: var( --light_blue);
+    color: var( --white);
     margin-top: 47px;
     height: 33px;
     line-height: 33px;
     text-align: left;
-    position: relative; /*required so red icons are positions properly*/
+    position: relative; /*required so red icons are positioned properly*/
 }
 
 #home-link {
