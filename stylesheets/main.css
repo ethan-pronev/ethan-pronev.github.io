@@ -18,7 +18,8 @@ body {
     font-family: 'Inconsolata', monospace;
     font-weight: 300;
     color: var(--grey);
-    background: url("../img/bg-final.png") no-repeat fixed center/cover;
+    /* background: url("../img/bg-final.png") no-repeat fixed center/cover; */
+    background: #f4f4f4;
 }
 
 a {
@@ -66,7 +67,7 @@ a {
 }
 
 .menu-item:hover {
-    color: var(--red);
+    color: var(--light_blue);
 }
 .menu-item:hover > .red-icons {
     visibility: visible;

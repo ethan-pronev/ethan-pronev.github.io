@@ -1,7 +1,89 @@
 #home-link {
-    color: var(--red);
+    color: var(--light_blue);
 }
 
 #home-link img {
     visibility: visible;
+}
+
+#content {
+    position: absolute;
+    width: calc(100% - 175px);
+    text-align: center; /*centers the name inline-block*/
+}
+
+#animate {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /* background: black; */ /*for testing */
+    display: inline-block;
+
+}
+
+/*typewriter effect*/
+
+#name {
+    overflow: hidden;
+    animation: typing 3s steps(21, end), blink .75s step-end infinite;
+    animation-delay: 1.5s; /*gives a little bit of time for the page to load so animation isn't cut off*/
+    animation-fill-mode: both; /*makes text invisible before animation starts*/
+    white-space: nowrap;
+    border-right: 2px solid var(--dark_blue);
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: var(--dark_blue); 
+    }
+}
+
+/*-----------------*/
+
+#center {
+    position: relative;
+    margin: 0 auto;
+    width: 789px;
+}
+
+#description {
+    width: 500px;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    background: var(--light_blue);
+}
+
+#description a:hover {
+    color: white;
+}
+
+#me {
+    display: block; /*gets rid of space below image*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+}
+
+.divide {
+    margin: 20px auto;
+    height: 1px;
+    background-color: var(--dark_blue);
+    width: 789px;
 }
