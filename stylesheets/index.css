@@ -6,25 +6,9 @@
     visibility: visible;
 }
 
-#content {
-    position: absolute;
-    width: calc(100% - 175px);
-    text-align: center; /*centers the name inline-block*/
-}
-
-#animate {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    /* background: black; */ /*for testing */
-    display: inline-block;
-
-}
-
 /*typewriter effect*/
 
-#name {
+.animate {
     overflow: hidden;
     animation: typing 3s steps(21, end), blink .75s step-end infinite;
     animation-delay: 1.5s; /*gives a little bit of time for the page to load so animation isn't cut off*/
@@ -54,22 +38,23 @@
 
 /*-----------------*/
 
-#center {
-    position: relative;
-    margin: 0 auto;
-    width: 789px;
-}
-
-#description {
+.description {
     width: 500px;
     padding: 30px;
     text-align: center;
-    color: white;
-    background: var(--light_blue);
+    font-weight: 400;
+    color: black;
+    font-size: 1.1rem;
+    background: var(--light_grey);
 }
 
-#description a:hover {
-    color: white;
+.description a {
+    color: var(--dark_blue);
+    /* text-decoration: underline; */
+}
+
+.description a:hover {
+    color: var(--light_blue);
 }
 
 #me {
@@ -79,11 +64,4 @@
     right: 0;
     height: 100%;
     width: auto;
-}
-
-.divide {
-    margin: 20px auto;
-    height: 1px;
-    background-color: var(--dark_blue);
-    width: 789px;
 }

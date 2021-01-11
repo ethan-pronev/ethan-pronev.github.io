@@ -6,7 +6,7 @@
     --red: #F24236;
     --other-red: #D72638; /*dk which red to use*/
     --grey: #5B616A;
-    --snow: #FCF7F8; /*prob don't use*/
+    --light_grey: #E2E2E2;
 }
 
 * {
@@ -73,6 +73,46 @@ a {
     visibility: visible;
 }
 
-#content {
+.content {
+    position: absolute;
     margin-left: 175px;
+    width: calc(100% - 175px);
+    text-align: center; /*centers the name inline-block*/
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /* background: black; */ /*for testing */
+    display: inline-block;
+
+}
+
+.center {
+    position: relative;
+    margin: 0 auto;
+    width: 790px;
+}
+
+/*for footer*/
+
+html, body {
+    height: 100%;
+}
+
+.content {
+    min-height:100%;
+    position:relative;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    color: black;
+    background: var(--light_grey);
 }
