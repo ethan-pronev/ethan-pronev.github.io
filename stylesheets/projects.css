@@ -52,12 +52,34 @@
 }
 
 .project-title {
+    position: relative;
     width: 100%;
     font-size: 2rem;
     font-weight: 500;
     padding: 5px 0;
     color: white;
     background: var(--dark_blue);
+}
+
+.project-source {
+    display: inline-block;
+    position: absolute;
+    height: 80%;
+    bottom: 4px;
+    right: 4px;
+}
+
+.project-source-blue {
+    display: inline-block;
+    position: absolute;
+    height: 80%;
+    bottom: 4px;
+    right: 4px;
+    visibility: hidden;
+}
+
+.project-source:hover > .project-source-blue{
+    visibility: visible;
 }
 
 .project-info {
@@ -77,6 +99,14 @@
 
 #competitive-programming .project-description {
     
+}
+
+#ethanpronevcom .project-description {
+    
+}
+
+#extended-essay .project-description {
+    width: 510px;
 }
 
 .project-description {
