@@ -1,0 +1,118 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --light_blue: #5BCDF5;
+    --dark_blue: #275DAD;
+    --red: #F24236;
+    --other-red: #D72638; /*dk which red to use*/
+    --grey: #5B616A;
+    --light_grey: #E2E2E2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+    color: var(--grey);
+    /* background: url("../img/bg-final.png") no-repeat fixed center/cover; */
+    background: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+#menu {
+    position: fixed;
+    width: 175px;
+    height: 100%;
+    z-index: 1;
+    background: url("../img/final-sidebar.png") no-repeat fixed;
+    background-color: var(--dark_blue);
+    background-size: 50px auto;
+    background-position-x: 10px;
+}
+
+.menu-item {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var( --white);
+    margin-top: 47px;
+    height: 33px;
+    line-height: 33px;
+    text-align: left;
+    position: relative; /*required so red icons are positioned properly*/
+}
+
+#home-link {
+    margin-top: 23px;
+}
+
+.menu-item img {
+    height: 100%;
+    float: left;
+    margin-left: 19px;
+    margin-right: 20px;
+}
+
+.red-icons {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+.menu-item:hover {
+    color: var(--light_blue);
+}
+.menu-item:hover > .red-icons {
+    visibility: visible;
+}
+
+.content {
+    position: absolute;
+    margin-left: 175px;
+    width: calc(100% - 175px);
+    text-align: center; /*centers the name inline-block*/
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /* background: black; */ /*for testing */
+    display: inline-block;
+
+}
+
+.center {
+    position: relative;
+    margin: 0 auto;
+    width: 790px;
+}
+
+/*for footer*/
+
+html, body {
+    height: 100%;
+}
+
+.content {
+    min-height:100%;
+    position:relative;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    color: black;
+    background: var(--light_grey);
+}

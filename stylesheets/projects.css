@@ -1,0 +1,145 @@
+#projects-link {
+    color: var(--light_blue);
+}
+
+#projects-link img {
+    visibility: visible;
+}
+
+/*typewriter effect*/
+
+.animate {
+    overflow: hidden;
+    animation: typing 1.5s steps(11, end), blink .75s step-end infinite;
+    animation-delay: 1.5s; /*gives a little bit of time for the page to load so animation isn't cut off*/
+    animation-fill-mode: both; /*makes text invisible before animation starts*/
+    white-space: nowrap;
+    border-right: 2px solid var(--dark_blue);
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: var(--dark_blue); 
+    }
+}
+
+/*-----------------*/
+
+#splitstub {
+    margin-top: 25px;
+}
+
+.project {
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+    font-weight: 400;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.project-title {
+    position: relative;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 5px 0;
+    color: white;
+    background: var(--dark_blue);
+}
+
+.project-source {
+    display: inline-block;
+    position: absolute;
+    height: 80%;
+    bottom: 4px;
+    right: 4px;
+}
+
+.project-source-blue {
+    display: inline-block;
+    position: absolute;
+    height: 80%;
+    bottom: 4px;
+    right: 4px;
+    visibility: hidden;
+}
+
+.project-source:hover > .project-source-blue{
+    visibility: visible;
+}
+
+.project-info {
+    position: relative;
+    width: calc(100% - 40px);/*to account for padding*/
+    padding: 20px;
+    background: var(--light_grey);
+}
+
+#splitstub .project-description {
+    width: 600px;
+}
+
+#skiitech .project-description {
+    width: 400px;
+}
+
+#competitive-programming .project-description {
+    
+}
+
+#ethanpronevcom .project-description {
+    
+}
+
+#extended-essay .project-description {
+    width: 510px;
+}
+
+.project-description {
+    text-align: left;
+}
+
+.project-description a {
+    color: var(--dark_blue);
+}
+
+.project-description a:hover {
+    color: var(--light_blue);
+}
+
+.project-technologies p {
+    display: inline-block;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.python {background: #306998; color: white;}
+.javascript {background: #F0DB4F;}
+.nodejs {background: #3C873A; color: white;}
+.html {background: #E44626; color: white;}
+.css {background: #264DE4; color: white;}
+.cpp {background: #F724D2; color: white;}
+.git {background: #000000; color: white;}
+.latex {background: #46A247; color: white;}
+
+.project img {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
