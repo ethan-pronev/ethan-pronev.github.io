@@ -1,14 +1,22 @@
 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-<model-viewer src="./3dmodels/piano.glb" ios-src="../3dmodels/piano.usdz" camera-controls>
+<model-viewer
+    src="../assets/Chair.glb"
+    ios-src="../assets/Chair.usdz"
+    poster="../assets/ChairPoster.png"
+    camera-orbit="1.2195rad 1.362rad auto"
+    shadow-intensity="1"
+    ar
+    ar-modes="webxr scene-viewer quick-look fallback"
+    camera-controls
+    alt="3D model of a chair with footrest"
+></model-viewer>
 
-    <div class="progress-bar hide" slot="progress-bar">
-        <div class="update-bar"></div>
-    </div>
-    <button slot="ar-button" id="ar-button">
-        View in your space
-    </button>
-    <div id="ar-prompt">
-        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
-    </div>
-</model-viewer>
+<!-- <<model-viewer
+    src="../../shared-assets/models/Astronaut.glb"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    ar-scale="auto"
+    camera-controls
+    alt="A 3D model of an astronaut"
+    ios-src="../../shared-assets/models/Astronaut.usdz"></model-viewer> -->
